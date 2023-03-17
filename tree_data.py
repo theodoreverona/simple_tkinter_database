@@ -11,20 +11,20 @@ import sqlite3
 import os
 
 # Change directory to "Projects"
-os.chdir("C:\\Users\\theod\\Desktop\\Official Python Scripts\\Projects")
+os.chdir("C:\\PATH\\PATH\\PATH\\PATH\\PATH")
 
 root = Tk()
 root.title("Tree Data Latin America")
-root.iconbitmap(r"C:\\Users\\theod\\Desktop\\Official Python Scripts\\Projects\\tree_data.db")
+root.iconbitmap(r"C:\\PATH\\PATH\\PATH\\PATH\\PATH\\data_base_name.db")
 root.geometry("400x400")
 os.getcwd()
 # Create a database or connect to one
-conn = sqlite3.connect("tree_data.db")
+conn = sqlite3.connect("tree_data.db") #NAME IT WHATEVER YOU WANT
 
 # Create cursor
 c = conn.cursor()
 
-#create Table
+#create Table #run once then comment out so you dont create it over and over
 '''
 c.execute("""CREATE TABLE addresses (
         first_name text,
